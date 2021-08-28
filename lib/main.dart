@@ -9,11 +9,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('First App'),),
-          ),
+      title: 'Flutter Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('First App'),
+        ),
+        body: Image(
+          image: NetworkImage(
+              'https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+        ),
+      ),
     );
   }
 }
