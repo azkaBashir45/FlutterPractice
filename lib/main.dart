@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.red,
         body: SafeArea(
             child: Column(
+          //end pr bootom then use this property
+          // mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
               child: Text("Azka"),
@@ -21,6 +24,9 @@ class MyApp extends StatelessWidget {
               height: 100,
               width: 100,
               margin: EdgeInsets.all(30),
+            ),
+            SizedBox(
+              height: 30,
             ),
             Container(
               child: Text("Azka"),
