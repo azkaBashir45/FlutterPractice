@@ -10,10 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
-        home: Text(
-          'Hello world',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-        )
-        );
+        home: Center(
+          child: Text(
+            'Hello world',
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ));
   }
 }
