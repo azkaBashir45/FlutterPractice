@@ -16,10 +16,17 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
           children: <Widget>[
-            Center(
-              child: CircleAvatar(
-                backgroundImage: AssetImage('lib/images/flower.jpeg'),
-                radius: 70,
+            // CircleAvatar(
+            //   backgroundImage: AssetImage('lib/images/flower.jpeg'),
+            //   radius: 70,
+            // ),
+            Text(
+              'Azka Bashir',
+              style: TextStyle(
+                color: Colors.black,
+                fontFamily: 'Pacifico',
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
               ),
             )
           ],
