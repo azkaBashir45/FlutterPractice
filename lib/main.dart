@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
             Container(
               child: Text("Azka"),
               color: Colors.teal,
-              height: 100,
+              height: 99,
               width: 100,
               margin: EdgeInsets.all(30),
             ),
