@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,30 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.tealAccent,
         body: SafeArea(
             child: Column(
-          //end pr bootom then use this property
-          // mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              child: Text("Azka"),
-              color: Colors.teal,
-              height: 100,
-              width: 100,
-              margin: EdgeInsets.all(30),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Container(
-              child: Text("Azka"),
-              color: Colors.teal,
-              height: 99,
-              width: 100,
-              margin: EdgeInsets.all(30),
-            ),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('lib/images/flower.jpeg'),
+                radius: 70,
+              ),
+            )
           ],
         )),
       ),
