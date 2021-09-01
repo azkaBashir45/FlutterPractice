@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                   child: Text(
                     'Azka Bashir',
                     style: TextStyle(
-                      color: Colors.black
+                      color: Colors.black,
                       fontFamily: 'Pacifico',
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
