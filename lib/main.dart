@@ -25,12 +25,20 @@ class MyApp extends StatelessWidget {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        //Expanded colum row m space fill krdyta h
-        Expanded(child: Image(image: AssetImage('lib/images/dic1.svg.png'))),
-        Expanded(child: Image.asset('lib/images/dic1.svg.png'))
-      ],
+    return Center(
+      child: Row(
+        children: [
+          //Expanded colum row m space fill krdyta h
+          Expanded(
+              child: FlatButton(
+                  onPressed: () {},
+                  child: Image(image: AssetImage('lib/images/dic1.svg.png')))),
+          Expanded(
+              child: FlatButton(
+                  onPressed: () {},
+                  child: Image.asset('lib/images/Dice2.svg.png')))
+        ],
+      ),
     );
   }
 }
