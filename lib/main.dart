@@ -31,11 +31,15 @@ class DicePage extends StatelessWidget {
           //Expanded colum row m space fill krdyta h
           Expanded(
               child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    print('Muhammad umar');
+                  },
                   child: Image(image: AssetImage('lib/images/dic1.svg.png')))),
           Expanded(
               child: FlatButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    print('Azka Bashir');
+                  },
                   child: Image.asset('lib/images/Dice2.svg.png')))
         ],
       ),
