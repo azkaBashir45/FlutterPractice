@@ -22,11 +22,18 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DicePage extends StatelessWidget {
+class DicePage extends StatefulWidget {
+  const DicePage({Key? key}) : super(key: key);
+
+  @override
+  _DicePageState createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
+  //variable
+  int left_image = 1;
   @override
   Widget build(BuildContext context) {
-    //variable
-    var image = 1;
     return Center(
       child: Row(
         children: [
@@ -34,11 +41,17 @@ class DicePage extends StatelessWidget {
           Expanded(
               child: FlatButton(
                   onPressed: () {
-                    print('Muhammad umar');
+                    //set state jo h wo build dubara create kry ga aur update krky value maintain kry gas
+                    setState(() {
+                      left_image = 5;
+                    });
+
+                    print('Muhammad umar$left_image');
                   },
                   child: Image(
-                    //put the variable
-                      image: AssetImage('lib/images/Dice$image.svg.png')))),
+                      //put the variable
+                      image:
+                          AssetImage('lib/images/Dice$left_image.svg.png')))),
           Expanded(
               child: FlatButton(
                   onPressed: () {
