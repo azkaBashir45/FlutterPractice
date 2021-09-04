@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'dart:math';
 
 void main() {
   runApp(MyApp());
@@ -44,7 +45,8 @@ class _DicePageState extends State<DicePage> {
                   onPressed: () {
                     //set state jo h wo build dubara create kry ga aur update krky value maintain kry gas
                     setState(() {
-                      left_image = 5;
+                      //random value put khod ba khod change
+                      left_image = Random().nextInt(5) + 1;
                     });
                     print('Muhammad umar$left_image');
                   },
@@ -56,7 +58,8 @@ class _DicePageState extends State<DicePage> {
               child: FlatButton(
                   onPressed: () {
                     setState(() {
-                      right_image = 3;
+                         //random value put khod ba khod changes
+                      right_image = Random().nextInt(5) + 1;
                       print('Azka Bashir');
                     });
                   },
