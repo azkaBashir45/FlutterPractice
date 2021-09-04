@@ -25,6 +25,8 @@ class MyApp extends StatelessWidget {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //variable
+    var image = 1;
     return Center(
       child: Row(
         children: [
@@ -34,7 +36,9 @@ class DicePage extends StatelessWidget {
                   onPressed: () {
                     print('Muhammad umar');
                   },
-                  child: Image(image: AssetImage('lib/images/dic1.svg.png')))),
+                  child: Image(
+                    //put the variable
+                      image: AssetImage('lib/images/Dice$image.svg.png')))),
           Expanded(
               child: FlatButton(
                   onPressed: () {
