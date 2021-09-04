@@ -58,7 +58,7 @@ class _DicePageState extends State<DicePage> {
               child: FlatButton(
                   onPressed: () {
                     setState(() {
-                         //random value put khod ba khod changes
+                         //random value put khod ba khod change
                       right_image = Random().nextInt(5) + 1;
                       print('Azka Bashir');
                     });
